@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гаряча пательня</title>
+    <link rel="icon" href="img/logomini.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="adapt.css">
+  </head>
+  <body>
+  <header>
+    <div class="header__prev">
+      <div class="header__logo">
+        <img src="img/logo.png" alt="кухар" />
+      </div>
+      <div class="header__box">
+        <h1>Мережа ресторанів "Гаряча пательня"</h1>
+        <span>У нас найсмачніше</span>
+        <button onclick="window.location.href='#form'">Забронювати місце</button>
+      </div>
+      <div class="header__lang-cont">
+        <ul class="header__lang">
+          <li><a href="#">UA</a></li>
+          <li><a href="#">EN</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header__menu">
+      <ul class="header__menu-box">
+        <li class="focus-home">
+          <div class="focus-home-box">
+            <a href="#"><img src="img/iconhome.png" alt="home" />Головна</a>
+          </div>
+          <div class="header__menu-focus">
+            <ul class="one">
+              <li><a href="#">Про компанію</a></li>
+              <li><a href="#">Публічний договір</a></li>
+              <li><a href="#">Наші нагороди</a></li>
+              <li><a href="#">Прайс-лист</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="focus-home">
+          <div class="focus-home-box">
+            <a href="#"><img src="img/iconplug.png" alt="menu" /> Рецепти</a>
+          </div>
+          <div class="header__menu-focus">
+            <ul class="one">
+              <li><a href="#vareniki">Вареники</a></li>
+              <li><a href="#borshch">Борщ</a></li>
+              <li><a href="#salat">Салат</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="focus-home">
+          <div class="focus-home-box">
+            <a href="#"><img src="img/iconadver.png" alt="adver" />Реклама</a>
+          </div>
+          <div class="header__menu-focus">
+            <ul class="one">
+              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="#">Акційні пропозиції</a></li>
+              <li><a href="#">Колаборації</a></li>
+              <li><a href="#">Відгуки</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="focus-home">
+          <div class="focus-home-box">
+            <a href="#"><img src="img/iconnevs.png" alt="info" />Новини</a>
+          </div>
+          <div class="header__menu-focus">
+            <ul class="one">
+              <li><a href="#">Останні події</a></li>
+              <li><a href="#">Якість товару</a></li>
+              <li><a href="#">Сертифікати</a></li>
+              <li><a href="#">Дозволи</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="focus-home-last">
+          <div class="focus-home-box">
+            <a href="#"><img src="img/iconemail.png" alt="tell" />Про нас</a>
+          </div>
+          <div class="header__menu-focus-last">
+            <ul class="one">
+              <li><a href="#">Засновники</a></li>
+              <li><a href="#">Цікаві ідеї</a></li>
+              <li><a href="#">Посилання</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><img src="img/recept/rest1.jpg" alt="Image 1"></div>
+        <div class="slide"><img src="img/recept/rest2.jpg" alt="Image 2"></div>
+        <div class="slide"><img src="img/recept/rest3.jpg" alt="Image 3"></div>
+      </div>
+      <button class="prev" onclick="prevSlide()">&#10094;</button>
+      <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+
+    <div id="vareniki" class="section__recipe-box right-to-left">
+      <div class="section__recipe-cont">
+        <img
+          class="vareniki-img"
+          src="img/recept/vareniki-z-kartopleu.jpg"
+          alt="vareniki-z-kartopleu"
+        />
+        <div class="recipe-table">
+          <h2>Інгредієнти</h2>
+          <table border="1">
+            <tr>
+              <th>Інгредієнт</th>
+              <th>Кількість</th>
+            </tr>
+            <tr>
+              <td>Вода</td>
+              <td>1 склянка</td>
+            </tr>
+            <tr>
+              <td>Яйце</td>
+              <td>1 шт.</td>
+            </tr>
+            <tr>
+              <td>Сіль</td>
+              <td>1/2 ч. л.</td>
+            </tr>
+            <tr>
+              <td>Борошно</td>
+              <td>2 склянки</td>
+            </tr>
+            <tr>
+              <td>Картопля</td>
+              <td>4-5 шт.</td>
+            </tr>
+            <tr>
+              <td>Цибуля ріпчаста</td>
+              <td>1 шт.</td>
+            </tr>
+            <tr>
+              <td>Рослинна олія</td>
+              <td>2-3 ст. л.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="section__recipe-manual">
+        <h2>Приготування</h2>
+        <h3>Робимо тісто з вареників</h3>
+        <span
+          >У злегка підігріту воду вбиваємо яйце, солимо і ретельно розмішуємо.
+          Поступово додаємо борошно і добре вимішуємо, щоб в результаті вийшло
+          досить щільне та еластичне тісто. Обертаємо його в плівку і залишаємо
+          на 30-40 хв. «дійти».</span
+        >
+        <h3>готуємо начинку</h3>
+        <span
+          >В цей час готуємо начинку, для чого відварюємо очищену картоплю в
+          злегка підсоленій воді. Очищуємо і подрібнюємо цибулю, яку необхідно
+          злегка пасерувати на рослинній олії до золотистого кольору. Гарячу
+          картоплю добре розминаємо і з'єднуємо з піджаркою з цибулі, перчимо до
+          смаку.</span
+        >
+        <h3>ліпимо тісто</h3>
+        <span
+          >Тісто ще раз вимішуємо і зручним для вас способом готуємо порційні
+          «коржики», в які поміщуємо трохи охололу начинку. Ретельно скріплюємо
+          краї тіста, і відварюємо вареники з картоплею 5-7 хв. (поки не
+          спливуть) в злегка підсоленій воді. Особливо добре смакує готова
+          страва зі сметаною.</span
+        >
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="borshch" class="section__recipe-box">
+      <div class="section__recipe-cont">
+        <img
+          class="vareniki-img"
+          src="img/recept/borshch.jpg"
+          alt="borshch"
+        />
+        <div class="recipe-table">
+          <h2>Інгредієнти</h2>
+          <table border="1">
+            <tr>
+              <th>Інгредієнт</th>
+              <th>Кількість</th>
+            </tr>
+            <tr>
+              <td>Буряк</td>
+              <td>1 шт.</td>
+            </tr>
+            <tr>
+              <td>Морква</td>
+              <td>1 шт.</td>
+            </tr>
+            <tr>
+              <td>Цибуля</td>
+              <td>1 шт.</td>
+            </tr>
+            <tr>
+              <td>Соняшникова олія</td>
+              <td>4 ст. л.</td>
+            </tr>
+            <tr>
+              <td>Томатна паста</td>
+              <td>3 ст. л.</td>
+            </tr>
+            <tr>
+              <td>Куряче філе</td>
+              <td>350 г</td>
+            </tr>
+            <tr>
+              <td>Вода</td>
+              <td>2 л</td>
+            </tr>
+            <tr>
+              <td>Картопля</td>
+              <td>5 шт.</td>
+            </tr>
+            <tr>
+              <td>Капуста</td>
+              <td>150 г</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="section__recipe-manual">
+        <h2>Приготування</h2>
+        <h3>Борщ із свининою в мультиварці</h3>
+        <span>Перш за все нам потрібно відварити буряк. Варимо його прямо в шкірці. Виймаємо та чекаємо, поки охолоне.
+          Чистимо та ріжемо наші овочі. Цибулю нарізаємо кубиками, моркву натираємо на тертці. Буряк ріжемо на невеликі смужки.</span
+        >
+        <h3>Робота з мультиваркою</h3>
+        <span>Наливаємо в мультиварку 2 столових ложки олії. Висипаємо цибулю й моркву. Готуємо 7 хвилин в режимі «Смаження».
+          Далі додаємо буряк, 3 столові ложки томатної пасти та смажимо ще хвилину
+          Виймаємо овочі, відставляємо вбік. Готуємо куряче філе. Не змінюючи режим, знову додаємо 2 столові ложки соняшникової олії та порізане на невеликі шматки куряче філе. Смажимо 7 хвилин.</span
+        >
+        <h3>Фінальна частина</h3>
+        <span
+          >Ставимо воду кипіти, в цей час чистимо та ріжемо картоплю. Додаємо киплячу воду й картоплю до курки. Вмикаємо режим «Суп» і готуємо 20 хвилин.
+          Капусту шаткуємо. Додаємо її в мультиварку й готуємо 6 хвилин.
+          Викладаємо в чашу мультиварки наші овочі. Додаємо сіль, перець за смаком, кладемо лавровий лист. Варимо хвилин 7.
+          Переводимо мультиварку в режим «Підігрів» і готуємо борщ ще 5 хвилин.
+                    Смачний борщ в мультиварці готовий. Смачного!</span
+        >
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="salat" class="section__recipe-box right-to-left">
+      <div class="section__recipe-cont">
+        <img
+          class="vareniki-img"
+          src="img/recept/salat.jpg"
+          alt="salat"
+        />
+        <div class="recipe-table">
+          <h2>Інгредієнти</h2>
+          <table border="1">
+            <tr>
+              <td>Овочева суміш «Мексиканка»</td>
+              <td>400 г</td>
+            </tr>
+            <tr>
+              <td>Часник</td>
+              <td>2-3 зубка</td>
+            </tr>
+            <tr>
+              <td>Петрушка, тім’ян та базилік</td>
+              <td>по 3 гілочки</td>
+            </tr>
+            <tr>
+              <td>Гірчиця</td>
+              <td>0,5 ч. ложки</td>
+            </tr>
+            <tr>
+              <td>Оливкова олія</td>
+              <td>2 ст. ложки</td>
+            </tr>
+            <tr>
+              <td>Винний оцет</td>
+              <td>0,5 ст. ложки</td>
+            </tr>
+            <tr>
+              <td>Сіль, цукор та перець</td>
+              <td>за смаком</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="section__recipe-manual">
+        <h2>Приготування</h2>
+        <h3>салат "мексиканський"</h3>
+        <span>Суміш відварити в підсоленій воді 5—7 хв. на помірному вогні. Злити воду і дати прохолонути.
+           Салат заправити соусом: гірчицю, оцет, олію, подрібнені зелень та часник, сіль, цукор та перець перемішати до однорідної маси.
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section__label-cont">
+      <h2 class="reviews-title">
+        Забронювати місце
+      </h2>
+      <form class="form">
+        <label>
+          <span>Ім'я</span>
+          <input placeholder="Введіть Ім'я" name="name" type="text">
+        </label>
+        <label >
+          <span >Номер телефону</span>
+          <input placeholder="+380 000 000 0000" name="phone-number" type="text">
+        </label>
+        <label >
+          <span >Email</span>
+          <input placeholder="email" name="email" type="text">
+        </label>
+        <label class="check" >
+          <span>Умови користування - ознайомлений</span>
+          <input class="checbox" type="checkbox">
+        </label>
+        <button>Відправити</button>
+      </form>
+    </div>
+  </section>
+    <footer>
+      <div  id="form" class="footer-links">
+          <a href="#">Головна</a>
+          <a href="#">Меню</a>
+          <a href="#">Резервування</a>
+          <a href="#">Про нас</a>
+          <a href="#">Контакти</a>
+      </div>
+      <p>Адреса: вул. Смачна, 12, Київ, Україна</p>
+      <p>Телефон: +38 (000) 123-45-67</p>
+      <p>Години роботи: Пн-Нд 10:00 - 23:00</p>
+      <p>&copy; 2024 Ресторан \"Гаряча пательня\". Усі права захищено.</p>
+  </footer>
+  <script>
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      const slides = document.querySelector('.slides');
+      const totalSlides = document.querySelectorAll('.slide').length;
+      
+      if (index >= totalSlides) {
+        currentSlide = 0;
+      } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+      } else {
+        currentSlide = index;
+      }
+
+      const offset = -currentSlide * 100;
+      slides.style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+  
+    showSlide(currentSlide);
+  </script>
+
+
+
+  
+
+  </body>
+</html>
