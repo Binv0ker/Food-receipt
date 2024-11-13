@@ -29,7 +29,7 @@
     font-size: 14px;
   }
   .header__menu-box {
-    gap: 10px;
+    gap: 10px !important;
   }
   .section__rest1 img {
     border-radius: 45px;
@@ -55,15 +55,14 @@
     font-size: 14px;
   }
   .section__recipe-manual {
-    width: 270px;
-
-    padding-right: 20px;
-    padding-left: 20px;
+    width: 250px;
+padding: 0 10px;
   }
   .section__label-cont {
     max-width: 320px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .header__prev {
     flex-direction: column;
@@ -119,6 +118,9 @@
   }
   .section__recipe-manual span {
     font-size: 14px;
+  }
+  .section__recipe-manual{
+    width: 300px;
   }
 }
 @media screen and (max-width: 1200px) {
